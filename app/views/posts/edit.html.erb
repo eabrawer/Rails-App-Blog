@@ -1,0 +1,17 @@
+<h1>Edit Post</h1>
+
+<%= form_for @post do |form| %>
+	<p>
+		<%= form.label :title %>
+		<%= form.text_field :title %>
+	</p>
+	<p>
+		<%= form.label :content %>
+		<%= form.text_area :content %>
+	</p>
+	<p>
+		<%= form.submit "Save" %>
+	</p>
+<% end %>
+
+<%= link_to "Go Back", posts_url %>
